@@ -17,7 +17,7 @@
 
     <string name="pokemon_weight">Poids : %1$s kg</string>
     <string name="pokemon_height">Taille : %1$s m</string>
-    <string name="pokemon_type">Type(s) : %1$s</string>
+    <string name="pokemon_type"> %1$s </string>
     <string name="pokemon_move">Attaques : %1$s</string>
 
     <string name="theme">Thème :</string>
