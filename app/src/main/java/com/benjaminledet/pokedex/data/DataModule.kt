@@ -27,6 +27,8 @@ val dataModule = module {
 
     single { get<PokedexDatabase>().pokemonDao() }
 
+    single { get<PokedexDatabase>().moveDao() }
+
     //endregion
 
     //region remote

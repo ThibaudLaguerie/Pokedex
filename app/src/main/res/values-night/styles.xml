@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseAppTheme.Night" parent="BaseAppTheme">
+        <item name="android:colorBackground">@color/lightDark</item>
+        <item name="colorSurface">@color/darkGrey</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme.Night"></style>
+</resources>

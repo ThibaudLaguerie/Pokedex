@@ -20,7 +20,10 @@ data class PokemonResponse(
     val weight: Double,
 
     @SerializedName("types")
-    val types: List<PokemonTypeResponse>
+    val types: List<PokemonTypeResponse>,
+
+    @SerializedName("moves")
+    val moves: List<PokemonMoveResponse>
 
 ) {
 
@@ -37,4 +40,10 @@ data class PokemonTypeResponse(
 
     @SerializedName("type")
     val type: ApiResourceResponse
+)
+
+data class PokemonMoveResponse(
+
+    @SerializedName("move")
+    val move: ApiResourceResponse
 )

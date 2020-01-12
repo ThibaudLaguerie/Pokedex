@@ -16,7 +16,9 @@
     <string name="error_load">Impossible de charger plus d\'éléments</string>
 
     <string name="pokemon_weight">Poids : %1$s kg</string>
-    <string name="pokemon_height">Taille : %1$s cm</string>
+    <string name="pokemon_height">Taille : %1$s m</string>
+    <string name="pokemon_type">Type(s) : %1$s</string>
+    <string name="pokemon_move">Attaques : %1$s</string>
 
     <string name="theme">Thème :</string>
     <string name="theme_light">Clair</string>

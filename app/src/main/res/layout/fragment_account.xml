@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
-    android:gravity="center_horizontal">
+      android:gravity="center_horizontal">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email">
+        android:hint="@string/email"
+        app:endIconMode="clear_text">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
@@ -20,32 +23,45 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/password">
+        android:hint="@string/password"
+        app:endIconMode="password_toggle">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
-        android:background="@color/colorPrimary"
+        android:background="?colorPrimary"
         android:padding="8dp"/>
 
-    <ImageView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:src="@drawable/ic_psyduck"
-        android:tint="@color/colorAccent"/>
+        android:focusable="true"
+        android:clickable="true">
 
-    <TextView
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_psyduck"
+            android:tint="?colorSecondary"
+            android:layout_margin="16dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/theme"/>
+        android:text="@string/theme"
+        android:textAppearance="?textAppearanceHeadline5"/>
 
     <RadioGroup
         android:id="@+id/themeRadioGroup"
@@ -53,19 +69,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <RadioButton
+        <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/themeLight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/theme_light"/>
 
-        <RadioButton
+        <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/themeDark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/theme_dark"/>
 
-        <RadioButton
+        <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/themeDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

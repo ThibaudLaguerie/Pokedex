@@ -29,6 +29,9 @@ interface PokeApiService {
     @GET("item-pocket/{name}")
     suspend fun getItemPocketAsync(@Path("name") name: String): Response<ItemPocketResponse>
 
+    @GET("move/{name}")
+    suspend fun getMoveAsync(@Path("name") name: String): Response<MoveResponse>
+
     companion object {
         private const val BASE_URL = "https://pokeapi.co/api/v2/"
 
