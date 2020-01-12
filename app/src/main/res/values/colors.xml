@@ -8,4 +8,23 @@
 
     <color name="lightDark">#212121</color>
     <color name="darkGrey">#1b1b1b</color>
+    <color name="normalType">#A8A878</color>
+    <color name="fireType">#F08030</color>
+    <color name="waterType">#6890F0</color>
+    <color name="grassType">#78C850</color>
+    <color name="electricType">#F8D030</color>
+    <color name="iceType">#98D8D8</color>
+    <color name="fightingType">#C03028</color>
+    <color name="poisonType">#A040A0</color>
+    <color name="groundType">#E0C068</color>
+    <color name="flyingType">#A890F0</color>
+    <color name="psychicType">#F85888</color>
+    <color name="bugType">#A8B820</color>
+    <color name="rockType">#B8A038</color>
+    <color name="ghostType">#705898</color>
+    <color name="darkType">#705848</color>
+    <color name="dragonType">#7038F8</color>
+    <color name="steelType">#B8B8D0</color>
+    <color name="fairyType">#F0B6BC</color>
+
 </resources>

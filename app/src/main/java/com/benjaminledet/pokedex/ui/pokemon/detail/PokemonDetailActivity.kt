@@ -1,5 +1,6 @@
 package com.benjaminledet.pokedex.ui.pokemon.detail
 
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
@@ -33,7 +34,12 @@ class PokemonDetailActivity: AppCompatActivity() {
             title = pokemon?.name
             weight.text = getString(R.string.pokemon_weight, pokemon?.detail?.weight.toString())
             height.text = getString(R.string.pokemon_height, pokemon?.detail?.height.toString())
+            var background = "#FFFFFF"
+            if(pokemon?.detail?.types?.get(0).equals("poison")) {
+                 background = "#A040A0"
+            }
             type.text = getString(R.string.pokemon_type, pokemon?.detail?.types.toString())
+            type.setBackgroundColor(Color.parseColor(background))
             move.text = getString(R.string.pokemon_move, pokemon?.detail?.moves.toString())
 
             Picasso.get().load(pokemon?.iconUrl).into(icon)
