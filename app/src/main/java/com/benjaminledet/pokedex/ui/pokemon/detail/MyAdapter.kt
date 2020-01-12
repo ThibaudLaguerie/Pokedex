@@ -10,6 +10,8 @@ import com.benjaminledet.pokedex.R
 import com.benjaminledet.pokedex.data.model.Move
 import com.google.android.material.card.MaterialCardView
 
+// Adapteur utilisé pour le recyclerView qui affiche les moves
+
 class MyAdapter (val moves: List<Move>, val callback: (Int) -> Unit):
 RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     class MyViewHolder(val v : LinearLayout) : RecyclerView.ViewHolder(v)
