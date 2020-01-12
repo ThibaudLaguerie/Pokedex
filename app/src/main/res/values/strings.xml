@@ -11,6 +11,7 @@
     <string name="email">Email</string>
     <string name="password">Mot de passe</string>
     <string name="login">Se connecter</string>
+    <string name="move">Move</string>
 
     <string name="error_refresh">Impossible de rafraichir</string>
     <string name="error_load">Impossible de charger plus d\'éléments</string>
@@ -24,5 +25,11 @@
     <string name="theme_light">Clair</string>
     <string name="theme_dark">Foncé</string>
     <string name="theme_default">Automatique</string>
+    <string name="attack">Attack</string>
+    <string name="power">Power</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="type">Type</string>
+    <string name="pp">PP</string>
+    <string name="todo">TODO</string>
 
 </resources>

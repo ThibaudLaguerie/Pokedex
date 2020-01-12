@@ -26,7 +26,7 @@ class PokemonRepository: KoinComponent {
 
     private val pokeApiClient by inject<PokeApiClient>()
 
-    fun getMoversObservable(names: List<String>) = moveDao.getAllObservable(names)
+    fun getMovesObservable(names: List<String>) = moveDao.getAllObservable(names)
 
     fun getPokemonObservable(id: Int) = pokemonDao.getByIdObservable(id)
 
